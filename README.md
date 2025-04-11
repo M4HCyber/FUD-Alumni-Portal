@@ -17,10 +17,12 @@ A comprehensive digital platform connecting Federal University Dutse (FUD) alumn
 - Searchable alumni directory
 - Profile viewing capabilities (future implementation)
 - Connection requests (future implementation)
+
 📢 **Communication Channels**
 - News and announcements section
 - Event management system
 - Discussion forums (planned)
+
 💳 **Payment Integration**
 - Donation processing
 - Membership fee payments
@@ -32,6 +34,7 @@ A comprehensive digital platform connecting Federal University Dutse (FUD) alumn
 2. Complete your profile with academic and professional details
 3. Connect with fellow alumni through the directory
 4. Stay updated with university news and events
+   
 ### For Administrators
 1. Access admin dashboard (future implementation)
 2. Manage user accounts and content (future implementation)
