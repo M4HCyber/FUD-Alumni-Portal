@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federal University, Dutse Alumni Portal</title>
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- FavIcon Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic"
+      rel="stylesheet"
+    />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="successfully">
+      <div class="event-s">
+        <div class="success-container">
+          <i class="fa-regular fa-circle-check fa-fade"></i>
+        </div>
+        <span class="succes">Success</span>
+        <span>Login successfully, Redirecting to Dashboard...</span>
+      </div>
+    </div>
+
+    <div class="failure">
+      <div class="event-s">
+        <div class="failure-container">
+          <i class="fa-solid fa-xmark fa-fade"></i>
+        </div>
+        <span class="error">Error</span>
+        <span>Invalid Email or Password, Try Again...</span>
+      </div>
+    </div>
+
+    <div class="account-creation-success">
+      <div class="event-s">
+        <div class="success-container">
+          <i class="fa-solid fa-circle-check fa-fade"></i>
+        </div>
+        <span class="error">Success</span>
+        <span>Account Created Successfully...</span>
+        <span class="email-registered"></span>
+        <button class="login-register">Click Here to Login</button>
+      </div>
+    </div>
+
+    <div class="account-creation-failure">
+      <div class="event-s">
+        <div class="failure-container">
+          <i class="fa-solid fa-xmark fa-fade"></i>
+        </div>
+        <span class="error">Error!</span>
+        <span>The email is already in used...</span>
+        <button class="login-register-error1">Click Here to Login</button>
+      </div>
+    </div>
+
+    <div class="account-creation-failure-required">
+      <div class="event-s">
+        <div class="failure-container">
+          <i class="fa-solid fa-xmark fa-fade"></i>
+        </div>
+        <span class="error">Error!</span>
+        <span id="message">Fields Required!!!</span>
+      </div>
+    </div>
+
+    <div class="overlay-loader">
+      <div class="loader"></div>
+    </div>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="login-img-container login-cont">
+          <div class="login-img-descriptions">
+            <span>FUD Alumni</span>
+            <button class="btn">
+              <a href="index.html">
+                Back to Home <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </button>
+          </div>
+
+          <img
+            src="assets/img/login-alumni-img-1.jpg"
+            alt="Alumni-Picture"
+            class="login-img"
+          />
+
+          <div class="login-img-desc2">
+            <span>
+              Capturing Momemnts <br />
+              Creating Memories
+            </span>
+            <div class="sliders">
+              <div class="slider selected"></div>
+              <div class="slider"></div>
+              <div class="slider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login-page-container login-cont active">
+          <a href="index.html">
+            <div id="home-icon">
+              <i class="fa-solid fa-house fa-bounce"></i>
+            </div>
+          </a>
+
+          <img src="assets/img/fud-logo.png" alt="" class="fud-logo" />
+          <h2>Log in</h2>
+          <form action="main.html" id="login-form">
+            <label for="email">
+              Enter your Email
+              <input type="email" name="email" id="email-signIn" required />
+            </label>
+
+            <label for="password">
+              Enter Your Password
+              <input
+                type="password"
+                name="password"
+                id="password-logIn"
+                required
+                minlength="6"
+              />
+            </label>
+            <label for="Remember-me">
+              <input type="checkbox" name="remember-me" id="remember-me" />
+              Remember Me
+            </label>
+            <input type="submit" value="Log in" id="login-submit" />
+            <a href="#" id="forgot-password">Forgot my Password</a>
+            <span
+              >Don't Have Account?
+              <a href="#login" id="register">Sign Up</a></span
+            >
+            <div class="other-login-methods">
+              <span>Or Login With</span>
+              <div class="btn-group">
+                <button class="btn google">
+                  <i class="fa-brands fa-google"></i> Google
+                </button>
+                <button class="btn apple">
+                  <i class="fa-brands fa-apple"></i> Apple
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="register-page-container login-cont">
+          <a href="index.html">
+            <div id="home-icon">
+              <i class="fa-solid fa-house fa-bounce"></i>
+            </div>
+          </a>
+          <img src="assets/img/fud-logo.png" alt="" class="fud-logo" />
+          <h2>Sign Up</h2>
+          <form action="">
+            <div class="name-div">
+              <label for="name">
+                First Name<span class="compulsory">*</span>
+                <input type="text" name="name" id="first-name" required />
+              </label>
+              <label for="last-name">
+                Last Name<span class="compulsory">*</span>
+                <input type="text" name="name" id="last-name" required />
+              </label>
+            </div>
+
+            <div class="name-div">
+              <label for="date-of-birth">
+                Date of Birth<span class="compulsory">*</span>
+                <input type="date" name="name" id="dob" required />
+              </label>
+              <label for="gender" id="gender">
+                Gender<span class="compulsory">*</span>
+                <div class="radio-container">
+                  <input type="radio" name="gender" id="male" required /> Male
+                  <input type="radio" name="gender" id="female" required />
+                  Female
+                </div>
+              </label>
+            </div>
+
+            <div class="name-div">
+              <label for="email">
+                Email<span class="compulsory">*</span>
+                <input type="email" name="email" id="email-address" required />
+              </label>
+              <label for="home-town">
+                State of Origin<span class="compulsory">*</span>
+                <input type="text" name="reg-no" id="state-origin" required />
+              </label>
+            </div>
+
+            <div class="name-div">
+              <label for="password">
+                Password<span class="compulsory">*</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="password-one"
+                  required
+                />
+              </label>
+              <label for="comfirm-password">
+                Comfirm Password<span class="compulsory">*</span>
+                <input
+                  type="password"
+                  name="comfirm-password"
+                  id="comfirm-password"
+                  required
+                />
+              </label>
+            </div>
+            <input type="submit" value="Sign Up" id="registerBtn" />
+            <span
+              >Already Have an Account
+              <a href="#login" id="login">Login</a></span
+            >
+          </form>
+        </div>
+
+        <div class="forgot-password-page">
+          <img src="assets/img/fud-logo.png" alt="" class="fud-logo" />
+          <button class="btn back-to-login">
+            <i class="fa-solid fa-arrow-left fa-flip"></i> Back
+          </button>
+          <h2>Forgot Password</h2>
+          <form action="">
+            <label for="email">
+              Enter your Email
+              <input type="email" name="email" id="email-reset" required />
+
+              <span class="code"
+                >A link had been sent to your email to reset your passowrd</span
+              >
+            </label>
+            <input type="submit" value="Send Reset Link" id="reset-password" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

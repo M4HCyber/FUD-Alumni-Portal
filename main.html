@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federal University, Dutse Alumni Portal</title>
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- FavIcon Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic"
+      rel="stylesheet"
+    />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay-loader">
+      <div class="loader"></div>
+    </div>
+    <main>
+      <div class="overlay"></div>
+      <div class="view-profile">
+        <div class="profile-section">
+          <div class="profile-picture">
+            <img src="assets/img/profile-icon.jpg" alt="" />
+          </div>
+          <h2 class="Alumni-name">Mahmoud Ibrahim</h2>
+          <p class="state-of-origin">Bauchi State</p>
+        </div>
+
+        <div class="profile-info">
+          <div class="wrap">
+            <h3>Your Information</h3>
+            <div class="info">
+              <p>Name:</p>
+              <p class="value">Mahmoud Ibrahim</p>
+
+              <p>Gender</p>
+              <p class="value">Male</p>
+
+              <p>Location:</p>
+              <p class="value">Azare, Bauchi State</p>
+
+              <p>Contact Address:</p>
+              <p class="value">
+                Kafin Kuka, Baba Kafinta Street, Azare, Bauchi State
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="close-div"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <nav class="main-navigation">
+        <h1>FUD Alumni Portal</h1>
+        <img src="assets/img/fud-logo.png" alt="" class="logo" />
+        <ul class="navigations">
+          <li>
+            <a href="" class="active-nav"
+              ><i class="fa-solid fa-house" data-target="home-section"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-user-group" data-target="view-alumni"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i
+                class="fa-solid fa-calendar"
+                data-target="event-news-section"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-bullhorn" data-target="announcement"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-money-bill" data-target="payment"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="profile">
+          <div class="profile-picture-border">
+            <img src="assets/img/profile-icon.jpg" alt="" />
+          </div>
+
+          <div class="profile-edit">
+            <div class="wrap">
+              <span class="v-profile"
+                ><i class="fa-solid fa-user"></i> Your Profile</span
+              >
+            </div>
+            <div class="wrap">
+              <span class="u-profile">
+                <i class="fa-solid fa-pen"></i>Update Profile</span
+              >
+            </div>
+
+            <div class="wrap last">
+              <span class="logout"
+                ><i class="fa-solid fa-right-from-bracket"></i>
+                <a href="login.html">Logout</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="home-section page active">
+        <div class="overlay"></div>
+        <div class="view-profile">
+          <div class="profile-section">
+            <div class="profile-picture">
+              <img src="assets/img/alumni-2.jpg" alt="" />
+            </div>
+            <h2 class="Alumni-name">Mahmoud Ibrahim</h2>
+            <p class="state-of-origin">Bauchi State</p>
+          </div>
+
+          <div class="profile-info">
+            <div class="wrap">
+              <h3>Your Information</h3>
+              <div class="info">
+                <p>Name:</p>
+                <p class="value">Mahmoud Ibrahim</p>
+
+                <p>Gender</p>
+                <p class="value">Male</p>
+
+                <p>Location:</p>
+                <p class="value">Azare, Bauchi State</p>
+
+                <p>Contact Address:</p>
+                <p class="value">
+                  Kafin Kuka, Baba Kafinta Street, Azare, Bauchi State
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-container hidden">
+          <div class="activity">
+            <div class="activity-img">
+              <img src="assets/img/alumni-friends.jpg" alt="" />
+            </div>
+            <div class="actvitiy-desc">
+              <h3>Alumni Friends</h3>
+              <p>Expand your network, reconnect with your alma mater</p>
+            </div>
+            <div class="view-activity" data-target="view-alumni">
+              View Alumni
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-img">
+              <img src="assets/img/event.jpg" alt="" />
+            </div>
+            <div class="actvitiy-desc">
+              <h3>Event/News</h3>
+              <p>Expand your network, reconnect with your alma mater</p>
+            </div>
+            <div class="view-activity" data-target="event-news-section">
+              View Event/News
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-img">
+              <img src="assets/img/announcement.jpg" alt="" />
+            </div>
+            <div class="actvitiy-desc">
+              <h3>Announcement</h3>
+              <p>Expand your network, reconnect with your alma mater</p>
+            </div>
+            <div class="view-activity" data-target="announcement">
+              View Announcement
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="activity-img">
+              <img src="assets/img/payment.jpg" alt="" />
+            </div>
+            <div class="actvitiy-desc">
+              <h3>Donate Fees</h3>
+              <p>Expand your network, reconnect with your alma mater</p>
+            </div>
+            <div class="view-activity" data-target="payment">Make Payment</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view-alumni page">
+        <span class="path">Home > Alumni Friends</span>
+        <h2>Alumni Friends</h2>
+        <div class="wrap">
+          <input
+            type="search"
+            name="search"
+            id="search-alumni"
+            placeholder="Search"
+          />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="alumni-gallery hidden">
+          <div
+            class="alumni"
+            data-name="Nuhu Salihu"
+            data-year="2026"
+            data-state="Kano State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-17.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Nuhu Salihu</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kano State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Mahmoud Ibrahim"
+            data-year="2026"
+            data-state="Bauchi State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-3.png" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Mahmoud Ibrahim</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Bauchi State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Rukayya Aliyu"
+            data-year="2026"
+            data-state="Kano State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-15.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Rukayya Aliyu</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kano State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Ibrahim Mahmoud"
+            data-year="2026"
+            data-state="Jigawa State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-5.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Ibrahim Mahmoud</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Jigawa State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Muhammad Isah"
+            data-year="2026"
+            data-state="Bauchi State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-4.png" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Muhammad Isah</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Bauchi State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Muhammad Mukhtar"
+            data-year="2026"
+            data-state="Kano State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-6.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Muhammad Mukhtar</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kano State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Hauwa'u Musa"
+            data-year="2026"
+            data-state="Kaduna State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-16.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Hauwa'u Musa</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kaduna State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Salisu Nasiru"
+            data-year="2026"
+            data-state="Kaduna State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-7.png" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Salisu Nasiru</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kaduna State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Ibrahim Isah"
+            data-year="2026"
+            data-state="Bauchi State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-8.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Ibrahim Isah</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2025</p>
+              <p class="state">Bauchi State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+
+          <div
+            class="alumni"
+            data-name="Umar Faruk"
+            data-year="2026"
+            data-state="Kano State"
+          >
+            <div class="alumni-pic">
+              <img src="assets/img/alumni-14.jpg" alt="" />
+            </div>
+            <div class="alumni-desc">
+              <h3 class="alumni-name">Umar Faruk</h3>
+              <p class="alumni-graduation-date">Yeah of Graduation: 2026</p>
+              <p class="state">Kano State</p>
+              <div class="invisible">
+                <p class="dept">Cyber Security Department</p>
+                <p class="status">Status: Active</p>
+              </div>
+            </div>
+
+            <button class="view-details">View Details</button>
+          </div>
+        </div>
+        <div class="view-alumni-all">
+          <button class="view-all-alumni">View All Alumni</button>
+        </div>
+      </section>
+
+      <section class="event-news-section page">
+        <span class="path">Home > Events/News</span>
+        <h2>Events/News</h2>
+        <div class="wrap-header">
+          <div class="selections-mode">
+            <label for="all" data-target="all">
+              <input type="radio" name="mode-search" id="all" checked />
+              <span>All</span>
+            </label>
+
+            <label for="events" data-target="event">
+              <input type="radio" name="mode-search" id="events" />
+              <span class="color-1">Events</span>
+            </label>
+
+            <label for="news" data-target="news">
+              <input type="radio" name="mode-search" id="news" />
+              <span class="color-2">News</span>
+            </label>
+          </div>
+
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search for an events or news"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="news-event hidden"
+          data-name="event"
+          data-title="Annual Alumni Reunion & Networking Conference 2025"
+        >
+          <div class="img-container">
+            <img src="assets/img/comfrence.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span
+                >📅 August 10, 2025, 📍 Federal University Dutse, Jigawa
+                State</span
+              >
+              <span class="event">Event</span>
+            </div>
+
+            <h3>Annual Alumni Reunion & Networking Conference 2025</h3>
+            <p>
+              Reconnect with former classmates, network with professionals, and
+              gain insights into career growth and industry trends at this
+              year's Annual Alumni Reunion & Networking Conference. The event
+              will feature guest speakers from various fields, panel
+              discussions, and an exclusive session for mentorship and job
+              opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="news">
+          <div class="img-container">
+            <img src="assets/img/scholarship.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span>📅 March, 2025</span>
+              <span class="new">News</span>
+            </div>
+
+            <h3>FUD Alumni Launches Scholarship Program for Undergraduates</h3>
+            <p>
+              The Federal University Dutse Alumni Association has launched a new
+              scholarship initiative to support outstanding undergraduates
+              facing financial difficulties. This initiative aims to provide
+              tuition assistance and mentorship opportunities to deserving
+              students. The first batch of beneficiaries will be announced in
+              May 2025.
+            </p>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="event">
+          <div class="img-container">
+            <img src="assets/img/job.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span
+                >📅 August 10, 2025, 📍 Federal University Dutse, Jigawa
+                State</span
+              >
+              <span class="event">Event</span>
+            </div>
+
+            <h3>Alumni Career Fair & Job Expo 2025</h3>
+            <p>
+              This event connects alumni with top employers across various
+              industries, offering job opportunities, internship programs, and
+              career development workshops. Recruiters will be present for
+              on-the-spot interviews, and career coaches will provide CV reviews
+              and interview tips. A perfect chance to boost your career
+            </p>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="news">
+          <div class="img-container">
+            <img src="assets/img/mukhtar.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span>📅 February 2025</span>
+              <span class="new">News</span>
+            </div>
+
+            <h3>FUD Alumni Member Appointed as Minister of Digital Economy</h3>
+            <p>
+              A proud moment for the FUD community! One of our distinguished
+              alumni, Dr. Muhammad Mukhtar Bello, has been appointed as
+              Nigeria’s Minister of Digital Economy. Dr. Bello, who graduated
+              from FUD’s CyberSecurity Department, has been recognized for his
+              contributions to cybersecurity and ICT development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="announcement page">
+        <span class="path">Home > Announcement</span>
+        <h2>Announcement</h2>
+        <div class="wrap-header">
+          <div class="selections-mode" data-target="all">
+            <label for="all">
+              <input type="radio" name="mode-search" id="all" checked />
+              <span>All</span>
+            </label>
+
+            <label for="events" data-target="active">
+              <input type="radio" name="mode-search" id="events" />
+              <span class="color-1">Active</span>
+            </label>
+
+            <label for="news" data-target="inactive">
+              <input type="radio" name="mode-search" id="news" />
+              <span class="color-2">Inactive</span>
+            </label>
+          </div>
+
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search for announcement"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="active">
+          <div class="img-container">
+            <img src="assets/img/fud.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span class="event">Active</span>
+            </div>
+
+            <h3>Welcome to the FUD Alumni Portal!</h3>
+            <p>
+              We are excited to welcome you to the official Federal University
+              Dutse (FUD) Alumni Portal! 🎉 This platform is designed to keep
+              you connected with fellow graduates, access career opportunities,
+              participate in events, and stay updated with university news. Make
+              sure to update your profile to receive notifications.
+            </p>
+
+            <button class="apply">
+              <a href="#" class="apply">Register</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="inactive">
+          <div class="img-container">
+            <img src="assets/img/id.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span class="new">Inactive</span>
+            </div>
+
+            <h3>Alumni ID Card Now Available!</h3>
+            <p>
+              🔹 Good news! 🎉 The FUD Alumni Association is now issuing
+              official Alumni ID Cards. This card grants you access to campus
+              facilities, discounts on selected services, and exclusive alumni
+              benefits. 📌 How to Apply: 1️⃣ Submit your application via Alumni
+              Portal 2️⃣ Receive your ID via email or collect it on campus
+            </p>
+
+            <button class="apply"><a href="#" class="apply">Apply</a></button>
+          </div>
+        </div>
+
+        <div class="news-event hidden" data-name="inactive">
+          <div class="img-container">
+            <img src="assets/img/success.jpg" alt="" />
+          </div>
+          <div class="events">
+            <div class="title">
+              <span class="new">Inactive</span>
+            </div>
+
+            <h3>Share Your Success Story!</h3>
+            <p>
+              🔹 Have you achieved something remarkable in your career or
+              community? We want to celebrate YOU! 🎉 The FUD Alumni Portal is
+              launching the "Alumni Spotlight" to feature inspiring success
+              stories from our graduates. This is your chance to inspire others
+              and showcase your achievements.
+            </p>
+
+            <button class="apply">
+              <a href="#" class="apply">Submit your Story Here</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment page">
+        <span class="path">Home > Payment</span>
+        <h2>Pay Fees</h2>
+        <div class="payment-header hidden">
+          <p>
+            Welcome to the Alumni Payment Section, where you can conveniently
+            manage all alumni-related payments. Whether you're paying for
+            membership, event fees, donations, or other contributions, our
+            secure payment system ensures a smooth and hassle-free transaction.
+            We offer multiple payment options for your convenience, allowing you
+            to stay connected and support your alma mater with ease. Make your
+            payment today and continue to be a part of our growing alumni
+            community
+          </p>
+        </div>
+
+        <div class="payment-method hidden">
+          <div class="payment">
+            <h3>Pay With Remita</h3>
+            <a href="https://remita.net/">
+              <img src="assets/img/remita.png" alt="" />
+            </a>
+          </div>
+
+          <div class="payment">
+            <h3>Pay With Paystack</h3>
+            <a href="https://remita.net/">
+              <img src="assets/img/paystack.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="update-profile">
+        <span class="path">Profile > Update Profile</span>
+        <div class="wrapper">
+          <div class="profile-picture-section">
+            <img src="assets/img/profile-icon.jpg" alt="" />
+            <h3>Profile Photo</h3>
+            <input type="file" name="" id="" />
+            <button class="upload-photo">+ Upload Photo</button>
+          </div>
+
+          <div class="personal-details">
+            <h3>Personal Details</h3>
+            <form action="">
+              <div class="name-div">
+                <label for="name">
+                  First Name<span class="compulsory">*</span>
+                  <input type="text" name="name" id="name" required />
+                </label>
+                <label for="last-name">
+                  Last Name<span class="compulsory">*</span>
+                  <input type="text" name="name" id="name" required />
+                </label>
+              </div>
+
+              <div class="name-div">
+                <label for="date-of-birth">
+                  Date of Birth<span class="compulsory">*</span>
+                  <input type="date" name="name" id="dob" required />
+                </label>
+                <label for="gender" id="gender">
+                  Gender<span class="compulsory">*</span>
+                  <div class="radio-container">
+                    <label for="gender" class="rad"
+                      ><input type="radio" name="gender" id="" /> Male
+                    </label>
+                    <label for="gender" class="rad"
+                      ><input type="radio" name="gender" id="" /> Male
+                    </label>
+                  </div>
+                </label>
+              </div>
+
+              <div class="name-div">
+                <label for="email">
+                  Email<span class="compulsory">*</span>
+                  <input type="email" name="email" id="email" required />
+                </label>
+                <label for="home-town">
+                  Registration No.<span class="compulsory">*</span>
+                  <input type="text" name="reg-no" id="reg-no" required />
+                </label>
+              </div>
+              <button class="update">Update</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Main Section JS
+
+      const profileIcon = document.querySelector(".profile");
+      const documentBody = document.querySelector("body");
+      const navItems = document.querySelectorAll(".navigations i");
+      const navAnchor = document.querySelectorAll(".navigations a");
+      const pages = document.querySelectorAll(".page");
+      const viewProfilePage = document.querySelector(".view-profile");
+      const viewProfileLink = document.querySelector(".v-profile");
+      const overLay = document.querySelector(".overlay");
+      const closeProfileIcon = document.querySelector(".close-div");
+      const updateProfileIcon = document.querySelector(".u-profile");
+      const updateProfilePage = document.querySelector(".update-profile");
+      const profilePicture = document.querySelector(".profile-picture-border");
+      const searchAlumniInput = document.querySelector("#search-alumni");
+      const viewDetails = document.querySelectorAll(".view-details");
+      const alumniDesc = document.querySelectorAll(".invisible");
+
+      for (const view of viewDetails) {
+        view.addEventListener("click", function () {
+          let parent = this.closest(".alumni");
+
+          let sibling = parent.closest(".invisible");
+          // let parentEl = alumniDesc.closest(".alumni");
+          sibling.classList.toggle("visible");
+        });
+      }
+
+      // Event/News Section
+
+      const selectionMode = document.querySelectorAll(
+        ".event-news-section label"
+      );
+      const newsEventCard = document.querySelectorAll(
+        ".event-news-section .news-event"
+      );
+
+      for (const select of selectionMode) {
+        select.addEventListener("click", () => {
+          let name = select.getAttribute("data-target");
+          for (const card of newsEventCard) {
+            if (card.getAttribute("data-name").toLowerCase() === name) {
+              card.style.display = "flex";
+            } else if (name === "all") {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          }
+        });
+      }
+
+      // Announcement
+      const selectionModeAnnounce = document.querySelectorAll(
+        ".announcement label"
+      );
+      const newsEventCardAnnounce = document.querySelectorAll(
+        ".announcement .news-event"
+      );
+
+      for (const select of selectionModeAnnounce) {
+        select.addEventListener("click", () => {
+          let name = select.getAttribute("data-target");
+          for (const card of newsEventCardAnnounce) {
+            if (card.getAttribute("data-name").toLowerCase() === name) {
+              card.style.display = "flex";
+              console.log(name === "all");
+            } else if (name === "all") {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          }
+        });
+      }
+
+      function searchAlumni() {
+        const alumniGalleryCards = document.querySelectorAll(".alumni");
+        const searchAlumniInputValue = document
+          .querySelector("#search-alumni")
+          .value.toLowerCase();
+
+        for (const card of alumniGalleryCards) {
+          let name = card.getAttribute("data-name").toLowerCase();
+          let state = card.getAttribute("data-state").toLowerCase();
+          let year = card.getAttribute("data-year").toLowerCase();
+
+          if (
+            name.includes(searchAlumniInputValue) |
+            state.includes(searchAlumniInputValue) |
+            year.includes(searchAlumniInputValue)
+          ) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        }
+      }
+
+      searchAlumniInput.addEventListener("keypress", searchAlumni);
+      profilePicture.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+
+      updateProfileIcon.addEventListener("click", () => {
+        pages.forEach((page) => page.classList.remove("active"));
+        navAnchor.forEach((item) => item.classList.remove("active-nav"));
+        updateProfilePage.classList.add("active");
+      });
+
+      closeProfileIcon.addEventListener("click", () => {
+        viewProfilePage.classList.remove("active");
+        overLay.classList.remove("show");
+        profilePicture.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      });
+
+      viewProfileLink.addEventListener("click", () => {
+        viewProfilePage.classList.add("active");
+        overLay.classList.add("show");
+        document.body.classList.add("no-scroll");
+
+        overLay.addEventListener("click", () => {
+          viewProfilePage.classList.remove("active");
+          overLay.classList.remove("show");
+        });
+      });
+      const homeSectionLinks = document.querySelectorAll(
+        ".home-section .view-activity"
+      );
+
+      for (let i = 0; i < homeSectionLinks.length; i++) {
+        homeSectionLinks[i].addEventListener("click", () => {
+          const targetPage = homeSectionLinks[i].getAttribute("data-target");
+          pages.forEach((page) => page.classList.remove("active"));
+          navAnchor.forEach((item) => item.classList.remove("active-nav"));
+
+          for (const page of pages) {
+            if (page.classList.contains(targetPage.toLowerCase())) {
+              page.classList.add("active");
+              navAnchor[i].classList.add("active-nav");
+              profilePicture.classList.remove("active");
+              break; // Exit the loop once the target page is found
+            }
+          }
+        });
+      }
+
+      for (let i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener("click", (event) => {
+          event.preventDefault();
+          const targetPage = navItems[i].getAttribute("data-target");
+
+          // Remove active classes from all pages and navigation items
+          pages.forEach((page) => page.classList.remove("active"));
+          navAnchor.forEach((item) => item.classList.remove("active-nav"));
+          updateProfilePage.classList.remove("active");
+
+          // Add active classes to the target page and clicked navigation item
+          for (const page of pages) {
+            if (page.classList.contains(targetPage.toLowerCase())) {
+              page.classList.add("active");
+              navAnchor[i].classList.add("active-nav");
+              break; // Exit the loop once the target page is found
+            }
+          }
+        });
+      }
+
+      profileIcon.addEventListener("click", () => {
+        const profileEdit = document.querySelector(".profile-edit");
+        profileEdit.classList.toggle("active");
+      });
+
+      const elements = document.querySelectorAll(".hidden");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      elements.forEach((el) => observer.observe(el));
+
+      // Loging Out Annimation
+
+      const loader = document.querySelector(".overlay-loader");
+      const logoutBtn = document.querySelector(".logout");
+
+      logoutBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        loader.classList.add("active");
+
+        setTimeout(function () {
+          window.location.href = event.target.closest("a").href;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
