@@ -1,6 +1,6 @@
 # FUD Alumni Portal
 A comprehensive digital platform connecting Federal University Dutse (FUD) alumni with their alma mater and fellow graduates.
-![Landing Page](assets/site pictures/landing-page.png)
+![Landing Page](assets/site-pictures/landing-page.png)
 ## Table of Contents
 - [Features](#features)
 - [Usage](#usage)
